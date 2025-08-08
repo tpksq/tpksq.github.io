@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+
+body {
+    font-family: 'Scheherazade New', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3;
+    color: #4a3f35;
+    text-align: center;
+}
+
+header {
+    background-color: #c69c6d;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a, a {
+    color: #8b5a2b;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover, a:hover {
+    color: #daa520;
+    text-decoration: underline;
+}
+
+.banner {
+    background: url('ramadan-2025.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #8b5a2b;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    border: 2px solid #c69c6d;
+    border-radius: 15px;
+    background-color: #fffaf0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #8b5a2b;
+    text-shadow: 2px 2px 4px #c69c6d;
+}
+
+p, li {
+    color: #4a3f35;
+}
+
+.gallery {
+    background: #fffaf0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #8b5a2b;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    clear: both;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #daa520;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fffaf0;
+    border-radius: 10px;
+    border: 2px solid #c69c6d;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0;
+    color: #4a3f35;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #8b5a2b;
+    border-radius: 5px;
+    background-color: #fdf6e3;
+    color: #4a3f35;
+    font-family: 'Scheherazade New', serif;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #c69c6d;
+    outline: none;
+}
+
+form button {
+    background-color: #c69c6d;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #8b5a2b;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .banner {
+        height: 200px;
+    }
+    section {
+        padding: 1em;
+    }
+    form {
+        padding: 0.5em;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #b22234;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #b22234;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #660000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.player-container {
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe[src*="youtube.com"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    margin: 1em 0;
+    border: 2px solid #b22234;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
